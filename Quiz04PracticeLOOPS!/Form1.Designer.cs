@@ -62,7 +62,7 @@
             label1.Font = new Font("Consolas", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(3, 9);
             label1.Name = "label1";
-            label1.Size = new Size(342, 19);
+            label1.Size = new Size(417, 23);
             label1.TabIndex = 0;
             label1.Text = "Q1 - Using a counted loop (for loop) ";
             // 
@@ -71,7 +71,7 @@
             label2.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.Location = new Point(3, 28);
             label2.Name = "label2";
-            label2.Size = new Size(358, 62);
+            label2.Size = new Size(358, 76);
             label2.TabIndex = 1;
             label2.Text = "When the user hits the button, the program will output “GO BEARS GO!” exactly five times.";
             // 
@@ -98,7 +98,7 @@
             label5.ForeColor = Color.LightGray;
             label5.Location = new Point(3, 92);
             label5.Name = "label5";
-            label5.Size = new Size(358, 24);
+            label5.Size = new Size(358, 46);
             label5.TabIndex = 4;
             label5.Text = "Criteria:  Use a for loop (3 marks)";
             // 
@@ -111,6 +111,7 @@
             q1Button.TabIndex = 5;
             q1Button.Text = "Code Me!";
             q1Button.UseVisualStyleBackColor = true;
+            q1Button.Click += q1Button_Click;
             // 
             // q1OutputLabel
             // 
@@ -129,6 +130,7 @@
             q2OutputLabel.Size = new Size(324, 71);
             q2OutputLabel.TabIndex = 12;
             q2OutputLabel.TextAlign = ContentAlignment.TopCenter;
+            q2OutputLabel.Click += q2OutputLabel_Click;
             // 
             // q2Button
             // 
@@ -139,6 +141,7 @@
             q2Button.TabIndex = 11;
             q2Button.Text = "Code Me!";
             q2Button.UseVisualStyleBackColor = true;
+            q2Button.Click += q2Button_Click;
             // 
             // label7
             // 
@@ -164,7 +167,7 @@
             label9.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label9.Location = new Point(12, 296);
             label9.Name = "label9";
-            label9.Size = new Size(358, 62);
+            label9.Size = new Size(358, 92);
             label9.TabIndex = 8;
             label9.Text = "When the user hits the button, the program will output “GO BEARS GO!” exactly five times.";
             // 
@@ -174,7 +177,7 @@
             label10.Font = new Font("Consolas", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.Location = new Point(12, 277);
             label10.Name = "label10";
-            label10.Size = new Size(351, 19);
+            label10.Size = new Size(428, 23);
             label10.TabIndex = 7;
             label10.Text = "Q2 - Using a counted loop (while loop)";
             // 
@@ -184,7 +187,7 @@
             label6.Font = new Font("Consolas", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.Location = new Point(381, 9);
             label6.Name = "label6";
-            label6.Size = new Size(306, 19);
+            label6.Size = new Size(373, 23);
             label6.TabIndex = 13;
             label6.Text = "Q3 - User Defined number of times";
             // 
@@ -206,12 +209,13 @@
             q3Button.TabIndex = 17;
             q3Button.Text = "Code Me!";
             q3Button.UseVisualStyleBackColor = true;
+            q3Button.Click += q3Button_Click;
             // 
             // label12
             // 
             label12.Font = new Font("Consolas", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label12.ForeColor = Color.LightGray;
-            label12.Location = new Point(381, 174);
+            label12.Location = new Point(381, 196);
             label12.Name = "label12";
             label12.Size = new Size(391, 41);
             label12.TabIndex = 16;
@@ -229,9 +233,9 @@
             // label14
             // 
             label14.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label14.Location = new Point(381, 37);
+            label14.Location = new Point(381, 32);
             label14.Name = "label14";
-            label14.Size = new Size(401, 137);
+            label14.Size = new Size(475, 164);
             label14.TabIndex = 14;
             label14.Text = resources.GetString("label14.Text");
             // 
@@ -248,7 +252,7 @@
             // 
             q3TextBox.Location = new Point(560, 254);
             q3TextBox.Name = "q3TextBox";
-            q3TextBox.Size = new Size(100, 26);
+            q3TextBox.Size = new Size(100, 31);
             q3TextBox.TabIndex = 20;
             // 
             // label11
@@ -257,7 +261,7 @@
             label11.Font = new Font("Consolas", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label11.Location = new Point(381, 365);
             label11.Name = "label11";
-            label11.Size = new Size(270, 19);
+            label11.Size = new Size(329, 23);
             label11.TabIndex = 21;
             label11.Text = "Q4 - Nested Loop (ICS3U Only)";
             // 
@@ -294,10 +298,10 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(9F, 19F);
+            AutoScaleDimensions = new SizeF(11F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(784, 561);
+            ClientSize = new Size(852, 561);
             Controls.Add(q4OutputLabel);
             Controls.Add(q4Button);
             Controls.Add(q4QuestionButton);
